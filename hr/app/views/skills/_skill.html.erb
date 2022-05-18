@@ -1,0 +1,11 @@
+<p><%= skill.title %></p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%= skill.level %>"><%= skill.level %></div>
+          </div>
+
+<p>
+  
+  <%= link_to 'Destroy Skill', [skill.resume, skill],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
